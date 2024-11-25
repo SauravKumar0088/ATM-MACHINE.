@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Machine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="atm-machine">
+        <div class="atm-screen">
+            <div id="screen-message">Welcome!</div>
+            <div id="screen-output">Please enter your PIN:</div>
+        </div>
+        <div id="atm-form">
+            <!-- Form for input -->
+        </div>
+        <div class="atm-keypad">
+            <button onclick="atmAction('checkBalance')">Check Balance</button>
+            <button onclick="atmAction('withdraw')">Withdraw</button>
+            <button onclick="atmAction('deposit')">Deposit</button>
+            <button onclick="atmAction('changePin')">Change PIN</button>
+            <button onclick="atmAction('history')">Transaction History</button>
+            <button onclick="atmAction('exit')">Exit</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
